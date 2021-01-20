@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise</title>
+    <!-- CSS External -->
+	<link rel="stylesheet" href="./style.css">
+    <style>
+        .flex-container-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 200px;
+        }
+        .flex-item-nav {
+            margin: 20px;
+            flex-direction: column;
+        }
+        .flex-container-biodata {
+            display: flex;
+            flex-direction: column;
+            margin-top: 400px;
+            margin-left: 200px;
+        }
+        .flex-item-biodata {
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+        h1, h4 {
+            margin: 0;
+        }
+        .flex-container-icons {
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-item-icon {
+            /* flex-direction: co; */
+            margin-right: 20px;
+            width: 20px;
+        }
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+        }
+        h4 {
+            font-weight: 300;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- START NAVBAR -->
+        <nav class="flex-container-nav">
+            <a href="index.html" class="active flex-item-nav" >HOME</a> 
+            <a href="about.html" class="flex-item-nav">ABOUT</a>
+            <a href="works.html" class="flex-item-nav">WORKS</a>
+            <a href="hobby.html" class="flex-item-nav">HOBBY</a>
+            <a href="https://brianrahmarela.com/" class="flex-item-nav">GO ANOTHER WEBSITE</a>
+        </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BIODATA -->
+        <div class="flex-container-biodata">
+            <h1 class="flex-item-biodata">Brian Rahmarela</h1>
+            <h4 class="flex-item-biodata">Frontend Developer</h4>
+            <div class="flex-container-icons">
+                <a href="https://">
+                  <img src="./icons/facebook.svg" alt="facebook" class="flex-item-icon">
+                </a>
+                <a href="https://">
+                  <img src="./icons/instagram.svg" alt="instagram" class="flex-item-icon">
+                </a>
+                <a href="https://">
+                  <img src="./icons/linkedin.svg" alt="linkedin" class="flex-item-icon">
+                </a>
+                <img src="./icons/closetag.svg " alt="closetag" class="flex-item-icon">
+              </div>
+        </div>
+    <!-- END BIODATA -->
+
+
+    
+</body>
+</html>

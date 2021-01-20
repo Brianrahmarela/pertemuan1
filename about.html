@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS External -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .flex-container-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 200px;
+        }
+        .flex-item-nav {
+            margin: 20px;
+            flex-direction: column;
+        }
+        .flex-container-biodata {
+            display: flex;
+            flex-direction: column;
+            margin-top: 400px;
+            margin-left: 200px;
+        }
+        .flex-item-biodata {
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        h1, p {
+            margin: 0;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 30px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            max-width: 700px;
+            margin-bottom: 7px;
+        }
+
+        .flex-container-keterangan {
+        display: flex;
+        margin-left: 200px;
+        max-width: 700px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .skills, .interest {
+        flex: 50%;
+        max-width: 200px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- START NAVBAR -->
+        <nav class="flex-container-nav">
+            <a href="index.html" class="flex-item-nav" >HOME</a> 
+            <a href="about.html" class="active flex-item-nav">ABOUT</a>
+            <a href="works.html" class="flex-item-nav">WORKS</a>
+            <a href="hobby.html" class="flex-item-nav">HOBBY</a>
+            <a href="https://brianrahmarela.com/" class="flex-item-nav">GO ANOTHER WEBSITE</a>
+        </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BIODATA -->
+        <div class="flex-container-biodata">
+            <h1 class="flex-item-biodata">HI! MY NAME IS BRIAN RAHMARELA</h1>
+            <p class="flex-item-biodata">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p class="flex-item-biodata">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sysdney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            </p>
+        </div>
+    <!-- END BIODATA -->
+
+    <!-- START YOUR SKILL -->
+    <div class="flex-container-keterangan">
+        <div class="skills">
+          <h2>Skills</h2>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+          <p>PHP</p>
+          <p>React JS</p>
+          <p>Figma</p>
+        </div>
+        <div class="interest">
+          <h2>Interest</h2>
+          <p>Code</p>
+          <p>Technology</p>
+          <p>UI UX</p>
+          <p>Graphic Design</p>
+          <p>Art</p>
+          <p>Football</p>
+          <p>Pro Evolution Soccer</p>
+        </div>
+      </div>
+    <!-- END YOUR SKILL -->
+
+</body>
+</html>

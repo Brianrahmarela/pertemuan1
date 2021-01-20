@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS External -->
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .flex-container-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 200px;
+            }
+            .flex-item-nav {
+                margin: 20px;
+                flex-direction: column;
+            }
+            .flex-container-works {
+                display: flex;
+                flex-direction: column;
+                margin-top: 400px;
+                margin-left: 200px;
+            }
+            .flex-item-works {
+                flex-direction: column;
+                padding-bottom: 20px;
+            }
+            h1, p {
+                margin: 0;
+            }
+            h1 {
+                font-weight: 400;
+                font-size: 30px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                max-width: 700px;
+                margin-bottom: 7px;
+                color: #6c757d;
+            } 
+
+            .flex-container-item-works {
+            display: flex;
+            padding-bottom: 10px;
+            max-width: 700px;
+            margin-left: 200px;
+            } 
+
+
+        /* Create two equal columns that sits next to each other */
+        .bar1, .bar2, .bar3 {
+        flex: 33.3%;
+        /* max-width: 200px; */
+        flex-direction: row;
+        }
+        .item-works {
+            width: 400px;
+            height: 400px;
+            padding: 35px 35px 10px 0;
+        }
+        img {
+            /* max-width:100%; */
+            /* max-height:100%; */
+            object-fit: 'contain';
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            /* max-width: 700px; */
+            margin-bottom: 7px;
+        }
+        h3 {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .footer{
+            margin-top: 300px;
+        }
+        </style>
+</head>
+<body>
+     <!-- START NAVBAR -->
+     <nav class="flex-container-nav">
+        <a href="index.html" class="flex-item-nav" >HOME</a> 
+        <a href="about.html" class="flex-item-nav">ABOUT</a>
+        <a href="works.html" class="active flex-item-nav">WORKS</a>
+        <a href="hobby.html" class="flex-item-nav">HOBBY</a>
+        <a href="https://brianrahmarela.com/" class="flex-item-nav">GO ANOTHER WEBSITE</a>
+    </nav>
+<!-- END NAVBAR -->
+
+<!-- START WORKS -->
+    <div class="flex-container-works">
+        <h1 class="flex-item-works">WORKS</h1>
+    </div>
+    <div class="flex-container-item-works">
+        <div class="bar1">
+            <img src="../images/work1.jpg" alt="" class="item-works">
+            <h3>HRBT Bank</h3>
+            <p>IPhone 11 Pro Max Apps, IOS</p>
+            <img src="../images/work7.jpg" alt="" class="item-works">
+            <h3>Caricatures</h3>
+            <p>Digital Painting</p>
+            <img src="../images/work6.jpg" alt="" class="item-works">
+            <h3>HSB Redesign Website</h3>
+            <p>Company Website
+            </p>
+        </div>
+        <div class="bar2">
+            <img src="../images/work11.jpg" alt="" class="item-works">
+            <h3>Much Moments Website</h3>
+            <p><a href="https://muchmoments.com/">WWW.MUCHMOMENTS.COM</a></p>
+           <img src="../images/work2.png" alt="" class="item-works">
+           <h3>Harley Davidson T-shirt</h3>
+           <p>Anak elang Jakarta</p>
+            <img src="../images/work3.jpg" alt="" class="item-works">
+            <h3>Ceker Jontor
+            </h3>
+            <p>Logo & Packaging Branding
+            </p>
+        </div>
+        <div class="bar3">
+
+            <img src="../images/work5.jpg" alt="" class="item-works">
+            <h3>Putri Boutique</h3>
+            <p><a href="https://marvelapp.com/prototype/3b7bd2c/screen/46318902">CLIK TO SEE PROTOTYPE</a></p>
+            <img src="../images/work8.jpg" alt="" class="item-works">
+            <h3>Digital Painting</h3>
+            <p>Watercolor</p>
+            <img src="../images/work10.jpg" alt="" class="item-works">
+            <h3>Grow Fast Grow Fair Book 1
+            </h3>
+            <p>PT Waskita Precast
+            </p>
+        </div>
+    </div>
+<!-- END WORKS -->
+<div class="footer"></div>
+    
+</body>
+</html>

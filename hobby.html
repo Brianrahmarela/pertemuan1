@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+        <style>
+            .flex-container-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 200px;
+            }
+            .flex-item-nav {
+                margin: 20px;
+                flex-direction: column;
+            }
+            .flex-container-hobby {
+                display: flex;
+                flex-direction: column;
+                margin-top: 400px;
+                margin-left: 200px;
+            }
+            .flex-item-hobby {
+                flex-direction: column;
+                padding-bottom: 20px;
+            }
+            h1, p {
+                margin: 0;
+            }
+            h1 {
+                font-weight: 400;
+                font-size: 30px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 16px;
+                max-width: 700px;
+                margin-bottom: 7px;
+                color: #6c757d;
+                margin-left: 200px;
+            } 
+            .flex-container-column-hobby{
+                margin-left: 200px;
+                display: flex;
+                margin-bottom: 100px;
+            }
+            
+            .icon1 {
+                flex: 50%;
+                max-width: 200px;
+                flex-direction: row;
+            }
+            .flex-container-column-hobby2{
+                margin-left: 0px;
+                display: flex;
+                /* justify-content: flex-start; */
+            }
+            .icon2 {
+                /* flex: 50%; */
+                max-width: 200px;
+                flex-direction: row;
+                /* justify-content: flex-end; */
+                
+                margin-left: 300px;
+            }
+
+        </style>
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="flex-container-nav">
+        <a href="index.html" class="flex-item-nav" >HOME</a> 
+        <a href="about.html" class="flex-item-nav">ABOUT</a>
+        <a href="works.html" class="flex-item-nav">WORKS</a>
+        <a href="hobby.html" class="active flex-item-nav">HOBBY</a>
+        <a href="https://brianrahmarela.com/" class="flex-item-nav">GO ANOTHER WEBSITE</a>
+    </nav>
+<!-- END NAVBAR -->
+
+<!-- START HOBBY -->
+    <div class="flex-container-hobby">
+        <h1 class="flex-item-hobby">HOBBY</h1>
+    </div>
+    <div class="flex-container-column-hobby">
+        <div class="icon1">
+            <img src="icons/closetag.svg">
+        </div>
+        <p class="flex-item-biodata">Saya menyukai programming khususnya frontend, dan juga desain user interface(UI) & UX, serta desain grafis. Mendesain user interface sendiri, membuat prototype, kemudian slicing desain ke frontend website hingga backend memberikan kepuasan tersendiri bagi saya. walaupun saya baru mengenal dunia programming, saya merasa kombinasi desain user interface dan programming adalah passion yang selama ini saya cari selama ini.
+        </p>
+    </div>
+    <div class="flex-container-column-hobby2">
+        <p class="flex-item-biodata">Hobi saya selanjutnya adalah bermain Pro Eolution soccer. khususnya pro evolution soccer mobile. Hampir setiap hari saya memainkan game ini karena membuat saya senang jika menang dan kesal jika kalah.
+        </p>
+        <div class="icon2">
+            <img src="icons/pes.jpeg">
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
